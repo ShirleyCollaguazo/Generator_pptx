@@ -1,0 +1,56 @@
+{
+  "outline": [
+    {
+      "title_id": "T0",
+      "title_text": "La historia de las computadoras",
+      "source_section_id": "SEC_0"
+    },
+    {
+      "title_id": "T1",
+      "title_text": "Computadoras",
+      "source_section_id": "SEC_1"
+    }
+  ],
+  "ideas": [
+    {
+      "idea_id": "T0_I1",
+      "title_id": "T0",
+      "section_id": "SEC_0",
+      "text": "La historia de las computadoras es relativamente reciente. Todo lo que se hizo antes de 1890 fue en el desarrollo en materias de matemáticas, lógica, qumica, metalurgia, mecánica, electricidad y electrónica."
+    },
+    {
+      "idea_id": "T1_I1",
+      "title_id": "T1",
+      "section_id": "SEC_1",
+      "text": "Esta generación de computadoras incorporó por primera vez la capacidad de compartir el tiempo en tareas diferentes (“time sharing” y “multiprogramming”)."
+    }
+  ],
+  "slides": [
+    {
+      "slide_id": "S0",
+      "slide_type": "title",
+      "title_text": "La historia de las computadoras"
+    },
+    {
+      "slide_id": "S1",
+      "slide_type": "content",
+      "title_text": "La historia de las computadoras",
+      "content": {
+        "content_type": "bullets",
+        "bullets": [
+          "La historia de las computadoras es relativamente reciente",
+          "Todo lo que se hizo antes de 1890 fue en el desarrollo en materias de matemáticas, lógica, qumica, metalurgia, mecánica, electricidad y electrónica"
+        ]
+      }
+    },
+    {
+      "slide_id": "S2",
+      "slide_type": "content",
+      "title_text": "Computadoras",
+      "content": {
+        "content_type": "paragraph",
+        "text": "Esta generación de computadoras incorporó por primera vez la capacidad de compartir el tiempo en tareas diferentes (“time sharing” y “multiprogramming”)."
+      }
+    }
+  ]
+}
