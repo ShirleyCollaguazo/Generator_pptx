@@ -1,5 +1,5 @@
 from pathlib import Path
-from typing import Dict, List
+from typing import List, Dict
 
 from pipeline.contracts.contract_io import load_contract, save_contract
 from pipeline.inference.idea_generator import IdeaGenerator
@@ -11,6 +11,9 @@ def write_ideas_to_contract(
     text: str,
     idea_model_path: str
 ) -> None:
+    """
+    Genera UNA o MÁS ideas por macrosección y las guarda en el contrato.
+    """
 
     contract = load_contract(contract_path)
 
@@ -19,25 +22,29 @@ def write_ideas_to_contract(
     existing_ideas = contract.get("ideas", [])
     outline = contract.get("outline", [])
 
-    # Solo títulos de ESTA macro-sección
+    # Títulos asociados a esta macrosección
     section_titles = [
         o for o in outline if o["source_section_id"] == section_id
     ]
 
+    # Generar ideas (LISTA)
+    ideas_generated = generator.generate_ideas(text)
+
     for outline_item in section_titles:
         title_id = outline_item["title_id"]
-        result = generator.generate_ideas(text)
 
-        for i in [1, 2]:
-            idea_text = result.get(f"idea_{i}", "").strip()
-            if idea_text:
-                existing_ideas.append({
-                    "idea_id": f"{title_id}_I{i}",
-                    "title_id": title_id,
-                    "section_id": section_id,   # ✅ CLAVE
-                    "text": idea_text
-                })
+        for idx, idea in enumerate(ideas_generated, start=1):
+            idea_text = idea.get("idea_text", "").strip()
+
+            if not idea_text:
+                continue
+
+            existing_ideas.append({
+                "idea_id": f"{title_id}_I{idx}",
+                "title_id": title_id,
+                "section_id": section_id,
+                "text": idea_text
+            })
 
     contract["ideas"] = existing_ideas
     save_contract(contract, contract_path)
-

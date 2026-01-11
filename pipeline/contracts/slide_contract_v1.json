@@ -2,54 +2,61 @@
   "outline": [
     {
       "title_id": "T0",
-      "title_text": "La historia de las computadoras",
-      "source_section_id": "SEC_0"
+      "title_text": "Animal genetic resources",
+      "source_section_id": "SEC_1"
     },
     {
       "title_id": "T1",
-      "title_text": "Computadoras",
-      "source_section_id": "SEC_1"
+      "title_text": "Aquatic genetic resources",
+      "source_section_id": "SEC_2"
     }
   ],
   "ideas": [
     {
       "idea_id": "T0_I1",
       "title_id": "T0",
-      "section_id": "SEC_0",
-      "text": "La historia de las computadoras es relativamente reciente. Todo lo que se hizo antes de 1890 fue en el desarrollo en materias de matemáticas, lógica, qumica, metalurgia, mecánica, electricidad y electrónica."
+      "section_id": "SEC_1",
+      "text": "livestock provide meat, milk, eggs, fibres, skins, manure for fertilizer and fuel, draught power for cultivation and transport, and a range of other products and services. Many of the world’s rural poor – an estimated 70 percent – keep livestock and rely on them as important components of their livelihoods. domesticated animals also contribute to the ecosystems in which they exist, providing services such as seed dispersal and nutrient cycling. Genetic diversity underpins the many roles that livestock fulfil and allows people to keep livestock under a wide variety of environmental conditions. As a result, domestic animals survive in some of the most inhospitable areas on Earth – from Arctic tundras and high mountains to hot dry deserts – where crop production is difficult or impossible."
     },
     {
       "idea_id": "T1_I1",
       "title_id": "T1",
-      "section_id": "SEC_1",
-      "text": "Esta generación de computadoras incorporó por primera vez la capacidad de compartir el tiempo en tareas diferentes (“time sharing” y “multiprogramming”)."
+      "section_id": "SEC_2",
+      "text": "The Commission on gene TiC resour Ces For Food And AgriCul Ture T aking steps to identify and sustain aquatic genetic resources the Commission on Genetic Resources for Food and Agriculture considered the issue of managing aquatic genetic diversity for the first time in 2007, calling upon its Members to initiate steps to determine the current state of the world’s aquatic genetic resource. Comprehensive risk assessments will be required for each potential re-introduction that will both take into account the risk of genetic erosion in the centers of origin for tilapia, and potential opportunities to enhance income, employment and food security among low income a frican fish farmers. The Commission is committed to addressing cross-cutting issues that can impact any or all components of biodiver - sity for food and agriculture, such as: • policies for access to genetic resources and for the sharing of benefits derived from their utilization; • application of biotechnologies in the conservation and utilization of genetic resources; • targets and indicators for genetic diversity conserva- tion; and • ecosystem approaches to biodiversity management.A number of international bodies deal with these issues."
     }
   ],
   "slides": [
     {
       "slide_id": "S0",
       "slide_type": "title",
-      "title_text": "La historia de las computadoras"
+      "title_text": "Animal genetic resources"
     },
     {
       "slide_id": "S1",
       "slide_type": "content",
-      "title_text": "La historia de las computadoras",
+      "title_text": "Animal genetic resources",
       "content": {
         "content_type": "bullets",
         "bullets": [
-          "La historia de las computadoras es relativamente reciente",
-          "Todo lo que se hizo antes de 1890 fue en el desarrollo en materias de matemáticas, lógica, qumica, metalurgia, mecánica, electricidad y electrónica"
-        ]
+          "livestock provide meat, milk, eggs, fibres, skins, manure for fertilizer and fuel, draught power for cultivation and transport, and a range of other products and services",
+          "Many of the world’s rural poor – an estimated 70 percent – keep livestock and rely on them as important components of their livelihoods",
+          "domesticated animals also contribute to the ecosystems in which they exist, providing services such as seed dispersal and nutrient cycling"
+        ],
+        "overflow": false
       }
     },
     {
       "slide_id": "S2",
       "slide_type": "content",
-      "title_text": "Computadoras",
+      "title_text": "Aquatic genetic resources",
       "content": {
-        "content_type": "paragraph",
-        "text": "Esta generación de computadoras incorporó por primera vez la capacidad de compartir el tiempo en tareas diferentes (“time sharing” y “multiprogramming”)."
+        "content_type": "bullets",
+        "bullets": [
+          "The Commission on gene TiC resour Ces For Food And AgriCul Ture T aking steps to identify and sustain aquatic genetic resources the Commission on",
+          "Genetic Resources for Food and Agriculture considered the issue of managing aquatic genetic diversity for the first time in 2007, calling upon its Members to",
+          "initiate steps to determine the current state of the world’s aquatic genetic resource"
+        ],
+        "overflow": false
       }
     }
   ]

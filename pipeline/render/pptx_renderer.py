@@ -97,4 +97,3 @@ def _set_body_bullets(slide, bullets) -> None:
             return
 
     print("[WARN] No se encontró placeholder de contenido (bullets).")
-
