@@ -15,7 +15,7 @@ from pipeline.render.pptx_renderer import render_pptx_from_contract
 PDF_PATH = Path("data/sample.pdf")
 CONTRACT_PATH = Path("pipeline/contracts/slide_contract_v1.json")
 TEMPLATE_PATH = Path("assets/templates/base_template.pptx")
-OUTPUT_PATH = Path("outputs/result_final.pptx")
+OUTPUT_PATH = Path("outputs/result_finalv2.pptx")
 
 
 def main() -> None:

@@ -1,22 +1,18 @@
 from pathlib import Path
-import PyPDF2
+import fitz 
 
 
-def extract_text_from_pdf(pdf_path: Path) -> str:
+def extract_text_from_pdf(pdf_path: str) -> str:
     """
-    Extract raw text from a PDF file.
+    Extracts text from PDF using PyMuPDF for better layout preservation.
     """
-    if not pdf_path.exists():
-        raise FileNotFoundError(f"PDF not found: {pdf_path}")
+    doc = fitz.open(pdf_path)
+    text_blocks = []
 
-    text = []
+    for page in doc:
+        page_text = page.get_text("text")
+        if page_text:
+            text_blocks.append(page_text)
 
-    with open(pdf_path, "rb") as f:
-        reader = PyPDF2.PdfReader(f)
-
-        for page in reader.pages:
-            page_text = page.extract_text()
-            if page_text:
-                text.append(page_text)
-
-    return "\n".join(text).strip()
+    doc.close()
+    return "\n".join(text_blocks)

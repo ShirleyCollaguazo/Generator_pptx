@@ -7,8 +7,18 @@
     },
     {
       "title_id": "T1",
-      "title_text": "Aquatic genetic resources",
+      "title_text": "Plant genetic resources for food and agriculture",
       "source_section_id": "SEC_2"
+    },
+    {
+      "title_id": "T2",
+      "title_text": "Aquatic genetic resources",
+      "source_section_id": "SEC_3"
+    },
+    {
+      "title_id": "T3",
+      "title_text": "Forest genetic resources",
+      "source_section_id": "SEC_4"
     }
   ],
   "ideas": [
@@ -16,13 +26,31 @@
       "idea_id": "T0_I1",
       "title_id": "T0",
       "section_id": "SEC_1",
-      "text": "livestock provide meat, milk, eggs, fibres, skins, manure for fertilizer and fuel, draught power for cultivation and transport, and a range of other products and services. Many of the world’s rural poor – an estimated 70 percent – keep livestock and rely on them as important components of their livelihoods. domesticated animals also contribute to the ecosystems in which they exist, providing services such as seed dispersal and nutrient cycling. Genetic diversity underpins the many roles that livestock fulfil and allows people to keep livestock under a wide variety of environmental conditions. As a result, domestic animals survive in some of the most inhospitable areas on Earth – from Arctic tundras and high mountains to hot dry deserts – where crop production is difficult or impossible."
+      "text": "Animal genetic resources are essential to food and livelihood security, particularly in the developing world. Livestock provide meat, milk, eggs, fibres, skins, manure for fertilizer and fuel, draught power for cultivation and transport, and a range of other products and services. Many of the world’s rural poor – an estimated 70 percent – keep livestock and rely on them as important components of their livelihoods. Domesticated animals also contribute to the ecosystems in which they exist, providing services such as seed dispersal and nutrient cycling. They adapt to local feed resources and develop resistance to diseases and parasites. They also adapt to environmental changes, emerging diseases or changing consumer demands."
+    },
+    {
+      "idea_id": "T0_I2",
+      "title_id": "T0",
+      "section_id": "SEC_1",
+      "text": "The role of livestock keepers in maintaining genetic diversity has been acknowledged by the international community, but much remains to be done to ensure that this acknowledgement is backed by concrete action."
     },
     {
       "idea_id": "T1_I1",
       "title_id": "T1",
       "section_id": "SEC_2",
-      "text": "The Commission on gene TiC resour Ces For Food And AgriCul Ture T aking steps to identify and sustain aquatic genetic resources the Commission on Genetic Resources for Food and Agriculture considered the issue of managing aquatic genetic diversity for the first time in 2007, calling upon its Members to initiate steps to determine the current state of the world’s aquatic genetic resource. Comprehensive risk assessments will be required for each potential re-introduction that will both take into account the risk of genetic erosion in the centers of origin for tilapia, and potential opportunities to enhance income, employment and food security among low income a frican fish farmers. The Commission is committed to addressing cross-cutting issues that can impact any or all components of biodiver - sity for food and agriculture, such as: • policies for access to genetic resources and for the sharing of benefits derived from their utilization; • application of biotechnologies in the conservation and utilization of genetic resources; • targets and indicators for genetic diversity conserva- tion; and • ecosystem approaches to biodiversity management.A number of international bodies deal with these issues."
+      "text": "Plant genetic diversity may also provide valuable traits needed for meeting challenges of the future, such as adapting our crops to changing climatic conditions or outbreaks of disease. The main cause of genetic erosion, according to FAO’s State of the World’s Plant Genetic Resources for Food and Agriculture, is the replacement of local varieties by modern varieties. As old varieties in farmers’ fields are replaced by newer ones, genetic erosion frequently occurs because the genes found in the farmers’ varieties are not all contained in the modern variety. In addition, the sheer number of varieties is often reduced when commercial varieties are introduced into traditional farming systems. Other reasons for genetic erosion include the emergence of new pests, weeds and diseases, environmental degradation, urbanization and land clearing through deforestation and bush fires. Traditional efforts to counter this genetic erosion concentrated on conservation of seeds in crop genebanks (ex situ). Today, it has become clear that the best strategy combines ex situ conservation with on-the-ground (in situ) conservation by farmers in their agro-ecosystems and of crop wild relatives in, for example, areas protected for their environmental value. Building respect for minor crops and diversifying our food basket Oca, teff, fonio and canihua are underutilized crop species, but in certain parts of the world they are critical to household food and livelihood security. They are grains and tubers which although conserved and used by local communities are often overlooked by agri- cultural research and extension programmes. Yet, they and countless other neglected species have widespread potential to contribute to agriculture and diet diversification, bringing benefits to farmers and consumers."
+    },
+    {
+      "idea_id": "T2_I1",
+      "title_id": "T2",
+      "section_id": "SEC_3",
+      "text": "Genetic diversity for food and agriculture is a key component of the world’s food production, and it plays a critical role in meeting the basic needs of food and livelihood security. The genetic diversity of crops, farm animals, forest trees, aquatic organisms, micro-organisms, and invertebrates – from bacteria invisible to the human eye that support agricultural soils to thundering yak that inhabit the highest elevations of the Himalayas – plays an important role in achieving a world without hunger. While the different components of biodiversity have distinct characteristics, they also share common features. The different components face both unique management challenges, as well as common threats, such as climate change. Conserving and using the reservoir of genetic diversity can provide the options needed for coping with climate change, yet, at the same time, climate change may also contribute to genetic erosion. Maintaining genetic diversity is therefore both important and urgent. The Commission is committed to addressing cross-sectorial matters that can impact any or all components of biodiver- sity for food, agriculture, and for the sharing of benefits derived from their utilization. The Treaty, negotiated by the Commission and ratified in 2004, established a Multilateral System of Access and Benefit-Sharing that facilitates access to, and fair and The Commission’s Multi-Year Programme of Work In a multi-year programme of work approved in 2007, the Commission expressed a long-term goal of producing an overview strategic assessment: the State of the World’s Biodiversity for Food and Agriculture."
+    },
+    {
+      "idea_id": "T3_I1",
+      "title_id": "T3",
+      "section_id": "SEC_4",
+      "text": "Forest genetic resources are important for sustainable forest management because they provide the potential for adaptation in the past, and will continue to provide this vital role as we address the challenge of mitigating or adapting to further climate changes. With climate change it can no longer be assumed that today’s growing conditions will be the same in 100 years and adaptability to change over lengthy rotation periods will increasingly be an important management consideration. The sustainable use of forest genetic resources, including the appropriate selection of forest seed and germplasm management are fundamental in forest plantations. The right match of species and seed source according to site conditions, combined with proper silviculture can improve productivity by well over 20%. Forests are generally managed with long rotation periods (the time between regeneration and harvesting), from 5-10 years and up to 150-200 years. There is also increasing awareness of the critical values that forest genetic diversity provide per se and as means to confront global challenges, such as climate change."
     }
   ],
   "slides": [
@@ -38,9 +66,9 @@
       "content": {
         "content_type": "bullets",
         "bullets": [
-          "livestock provide meat, milk, eggs, fibres, skins, manure for fertilizer and fuel, draught power for cultivation and transport, and a range of other products and services",
-          "Many of the world’s rural poor – an estimated 70 percent – keep livestock and rely on them as important components of their livelihoods",
-          "domesticated animals also contribute to the ecosystems in which they exist, providing services such as seed dispersal and nutrient cycling"
+          "Animal genetic resources are essential to food and livelihood security, particularly in the developing world",
+          "Livestock provide meat, milk, eggs, fibres, skins, manure for fertilizer and fuel, draught power for cultivation and transport, and a range of other products and services",
+          "Many of the world’s rural poor – an estimated 70 percent – keep livestock and rely on them as important components of their livelihoods"
         ],
         "overflow": false
       }
@@ -48,13 +76,54 @@
     {
       "slide_id": "S2",
       "slide_type": "content",
+      "title_text": "Animal genetic resources",
+      "content": {
+        "content_type": "bullets",
+        "bullets": [
+          "The role of livestock keepers in maintaining genetic diversity has been acknowledged by the international community, but much remains to be done to ensure that",
+          "this acknowledgement is backed by concrete action"
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "slide_id": "S3",
+      "slide_type": "content",
+      "title_text": "Plant genetic resources for food and agriculture",
+      "content": {
+        "content_type": "bullets",
+        "bullets": [
+          "Plant genetic diversity may also provide valuable traits needed for meeting challenges of the future, such as adapting our crops to changing climatic conditions or outbreaks of disease",
+          "The main cause of genetic erosion, according to FAO’s State of the World’s Plant Genetic Resources for Food and Agriculture, is the replacement of local varieties by modern varieties",
+          "As old varieties in farmers’ fields are replaced by newer ones, genetic erosion frequently occurs because the genes found in the farmers’ varieties are not"
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "slide_id": "S4",
+      "slide_type": "content",
       "title_text": "Aquatic genetic resources",
       "content": {
         "content_type": "bullets",
         "bullets": [
-          "The Commission on gene TiC resour Ces For Food And AgriCul Ture T aking steps to identify and sustain aquatic genetic resources the Commission on",
-          "Genetic Resources for Food and Agriculture considered the issue of managing aquatic genetic diversity for the first time in 2007, calling upon its Members to",
-          "initiate steps to determine the current state of the world’s aquatic genetic resource"
+          "Genetic diversity for food and agriculture is a key component of the world’s food production, and it plays a critical role in meeting the basic",
+          "needs of food and livelihood security",
+          "The genetic diversity of crops, farm animals, forest trees, aquatic organisms, micro-organisms, and invertebrates – from bacteria invisible to the human eye that support agricultural"
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "slide_id": "S5",
+      "slide_type": "content",
+      "title_text": "Forest genetic resources",
+      "content": {
+        "content_type": "bullets",
+        "bullets": [
+          "Forest genetic resources are important for sustainable forest management because they provide the potential for adaptation in the past, and will continue to provide this",
+          "vital role as we address the challenge of mitigating or adapting to further climate changes",
+          "With climate change it can no longer be assumed that today’s growing conditions will be the same in 100 years and adaptability to change over"
         ],
         "overflow": false
       }
