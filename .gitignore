@@ -11,3 +11,4 @@ models/**/*.bin
 models/**/optimizer.pt
 models/**/scheduler.pt
 models/**/rng_state.pth
+.env

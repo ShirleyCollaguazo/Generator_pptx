@@ -2,23 +2,18 @@
   "outline": [
     {
       "title_id": "T0",
-      "title_text": "Animal genetic resources",
+      "title_text": "Ciencia",
       "source_section_id": "SEC_1"
     },
     {
       "title_id": "T1",
-      "title_text": "Plant genetic resources for food and agriculture",
+      "title_text": "",
       "source_section_id": "SEC_2"
     },
     {
       "title_id": "T2",
-      "title_text": "Aquatic genetic resources",
+      "title_text": "",
       "source_section_id": "SEC_3"
-    },
-    {
-      "title_id": "T3",
-      "title_text": "Forest genetic resources",
-      "source_section_id": "SEC_4"
     }
   ],
   "ideas": [
@@ -26,49 +21,43 @@
       "idea_id": "T0_I1",
       "title_id": "T0",
       "section_id": "SEC_1",
-      "text": "Animal genetic resources are essential to food and livelihood security, particularly in the developing world. Livestock provide meat, milk, eggs, fibres, skins, manure for fertilizer and fuel, draught power for cultivation and transport, and a range of other products and services. Many of the world’s rural poor – an estimated 70 percent – keep livestock and rely on them as important components of their livelihoods. Domesticated animals also contribute to the ecosystems in which they exist, providing services such as seed dispersal and nutrient cycling. They adapt to local feed resources and develop resistance to diseases and parasites. They also adapt to environmental changes, emerging diseases or changing consumer demands."
-    },
-    {
-      "idea_id": "T0_I2",
-      "title_id": "T0",
-      "section_id": "SEC_1",
-      "text": "The role of livestock keepers in maintaining genetic diversity has been acknowledged by the international community, but much remains to be done to ensure that this acknowledgement is backed by concrete action."
+      "text": "155 Revista Número 8 - Diciembre 2000 Contexto de la Ciencia Las características del mundo actual son muy particulares: progreso tecnológico, nuevos modelos de organización social y económica, globalización, información, información y comunicación, información nueva y en crecimiento exponencial, todo lo cual conlleva una serie de cambios a nivel de todas las ciencias. Se enfrenta a una posición de duras críticas que desembocan en crisis, las cuales posibilitan revoluciones en el conocimiento y en la realidad. La educación y la formación recibidas hoy en día no bastan para hacer frente a estas transformaciones cada vez más frecuentes y aceleradas."
     },
     {
       "idea_id": "T1_I1",
       "title_id": "T1",
       "section_id": "SEC_2",
-      "text": "Plant genetic diversity may also provide valuable traits needed for meeting challenges of the future, such as adapting our crops to changing climatic conditions or outbreaks of disease. The main cause of genetic erosion, according to FAO’s State of the World’s Plant Genetic Resources for Food and Agriculture, is the replacement of local varieties by modern varieties. As old varieties in farmers’ fields are replaced by newer ones, genetic erosion frequently occurs because the genes found in the farmers’ varieties are not all contained in the modern variety. In addition, the sheer number of varieties is often reduced when commercial varieties are introduced into traditional farming systems. Other reasons for genetic erosion include the emergence of new pests, weeds and diseases, environmental degradation, urbanization and land clearing through deforestation and bush fires. Traditional efforts to counter this genetic erosion concentrated on conservation of seeds in crop genebanks (ex situ). Today, it has become clear that the best strategy combines ex situ conservation with on-the-ground (in situ) conservation by farmers in their agro-ecosystems and of crop wild relatives in, for example, areas protected for their environmental value. Building respect for minor crops and diversifying our food basket Oca, teff, fonio and canihua are underutilized crop species, but in certain parts of the world they are critical to household food and livelihood security. They are grains and tubers which although conserved and used by local communities are often overlooked by agri- cultural research and extension programmes. Yet, they and countless other neglected species have widespread potential to contribute to agriculture and diet diversification, bringing benefits to farmers and consumers."
+      "text": "La evaluación e intervención en el niño es un proceso de observación y recogida de información durante el proceso que no termina cuando se obtienen los resultados."
+    },
+    {
+      "idea_id": "T1_I2",
+      "title_id": "T1",
+      "section_id": "SEC_2",
+      "text": "La evaluación e intervención se basa en un modelo sistémico e integral, que afirma la naturaleza dialéctica del individuo con su entorno. Este modelo se enmarca en un modelo cognitivo-conductual. Se caracteriza por una evaluación completa, pero que no se restringe a una simple y única descripción de síntomas o indicadores de déficit o potencial que pueda integrar la información y dar cuenta de una complejidad que se relaciona con el entorno del individuo. Se puede evidenciar que el modelo tiene sentido si aporta información sobre la etiología del problema a diagnosticar o tiene implicaciones para el diagnóstico, o tiene implicaciones para el tratamiento y/o pronóstico."
     },
     {
       "idea_id": "T2_I1",
       "title_id": "T2",
       "section_id": "SEC_3",
-      "text": "Genetic diversity for food and agriculture is a key component of the world’s food production, and it plays a critical role in meeting the basic needs of food and livelihood security. The genetic diversity of crops, farm animals, forest trees, aquatic organisms, micro-organisms, and invertebrates – from bacteria invisible to the human eye that support agricultural soils to thundering yak that inhabit the highest elevations of the Himalayas – plays an important role in achieving a world without hunger. While the different components of biodiversity have distinct characteristics, they also share common features. The different components face both unique management challenges, as well as common threats, such as climate change. Conserving and using the reservoir of genetic diversity can provide the options needed for coping with climate change, yet, at the same time, climate change may also contribute to genetic erosion. Maintaining genetic diversity is therefore both important and urgent. The Commission is committed to addressing cross-sectorial matters that can impact any or all components of biodiver- sity for food, agriculture, and for the sharing of benefits derived from their utilization. The Treaty, negotiated by the Commission and ratified in 2004, established a Multilateral System of Access and Benefit-Sharing that facilitates access to, and fair and The Commission’s Multi-Year Programme of Work In a multi-year programme of work approved in 2007, the Commission expressed a long-term goal of producing an overview strategic assessment: the State of the World’s Biodiversity for Food and Agriculture."
-    },
-    {
-      "idea_id": "T3_I1",
-      "title_id": "T3",
-      "section_id": "SEC_4",
-      "text": "Forest genetic resources are important for sustainable forest management because they provide the potential for adaptation in the past, and will continue to provide this vital role as we address the challenge of mitigating or adapting to further climate changes. With climate change it can no longer be assumed that today’s growing conditions will be the same in 100 years and adaptability to change over lengthy rotation periods will increasingly be an important management consideration. The sustainable use of forest genetic resources, including the appropriate selection of forest seed and germplasm management are fundamental in forest plantations. The right match of species and seed source according to site conditions, combined with proper silviculture can improve productivity by well over 20%. Forests are generally managed with long rotation periods (the time between regeneration and harvesting), from 5-10 years and up to 150-200 years. There is also increasing awareness of the critical values that forest genetic diversity provide per se and as means to confront global challenges, such as climate change."
+      "text": "En el trabajo psicológico con niños, ya sea clínico o educativo, y con el fin de responder a los modelos actuales y reaccionar a los modelos actuales caracterizados por ser sistémicos e integrales, teniendo en cuenta la ética, se recomiendan los siguientes puntos. En este sentido, el objetivo del trabajo con niños no es simplemente resolver el problema, sino dotarles de herramientas e instrumentos que les ayuden a afrontar, resolver el problema por el que han venido y otros problemas que puedan surgir, es decir, posibilitar los problemas que vayan surgiendo, es decir, posibilitar la transferencia."
     }
   ],
   "slides": [
     {
       "slide_id": "S0",
       "slide_type": "title",
-      "title_text": "Animal genetic resources"
+      "title_text": "Ciencia"
     },
     {
       "slide_id": "S1",
       "slide_type": "content",
-      "title_text": "Animal genetic resources",
+      "title_text": "Ciencia",
       "content": {
         "content_type": "bullets",
         "bullets": [
-          "Animal genetic resources are essential to food and livelihood security, particularly in the developing world",
-          "Livestock provide meat, milk, eggs, fibres, skins, manure for fertilizer and fuel, draught power for cultivation and transport, and a range of other products and services",
-          "Many of the world’s rural poor – an estimated 70 percent – keep livestock and rely on them as important components of their livelihoods"
+          "155 Revista Número 8 - Diciembre 2000 Contexto de la Ciencia Las características del mundo actual son muy particulares",
+          "el progreso tecnológico, los nuevos modelos de organización social y económica, la globalización, la información, la información y la comunicación, la información nueva y exponencialmente creciente, todo lo cual conlleva una serie",
+          "de cambios a nivel de todas las ciencias"
         ],
         "overflow": false
       }
@@ -76,26 +65,23 @@
     {
       "slide_id": "S2",
       "slide_type": "content",
-      "title_text": "Animal genetic resources",
+      "title_text": "",
       "content": {
-        "content_type": "bullets",
-        "bullets": [
-          "The role of livestock keepers in maintaining genetic diversity has been acknowledged by the international community, but much remains to be done to ensure that",
-          "this acknowledgement is backed by concrete action"
-        ],
+        "content_type": "paragraph",
+        "text": "La evaluación e intervención en el niño es un proceso de observación y recogida de información durante el proceso que no termina cuando se obtienen los resultados.",
         "overflow": false
       }
     },
     {
       "slide_id": "S3",
       "slide_type": "content",
-      "title_text": "Plant genetic resources for food and agriculture",
+      "title_text": "",
       "content": {
         "content_type": "bullets",
         "bullets": [
-          "Plant genetic diversity may also provide valuable traits needed for meeting challenges of the future, such as adapting our crops to changing climatic conditions or outbreaks of disease",
-          "The main cause of genetic erosion, according to FAO’s State of the World’s Plant Genetic Resources for Food and Agriculture, is the replacement of local varieties by modern varieties",
-          "As old varieties in farmers’ fields are replaced by newer ones, genetic erosion frequently occurs because the genes found in the farmers’ varieties are not"
+          "La evaluación e intervención se basa en un modelo sistémico e integral, que afirma la naturaleza dialéctica del individuo con su entorno",
+          "Este modelo se enmarca en un modelo cognitivo-conductual",
+          "Se caracteriza por una evaluación completa, pero que no se limita a una simple y única descripción de síntomas o indicadores de déficits"
         ],
         "overflow": false
       }
@@ -103,27 +89,13 @@
     {
       "slide_id": "S4",
       "slide_type": "content",
-      "title_text": "Aquatic genetic resources",
+      "title_text": "",
       "content": {
         "content_type": "bullets",
         "bullets": [
-          "Genetic diversity for food and agriculture is a key component of the world’s food production, and it plays a critical role in meeting the basic",
-          "needs of food and livelihood security",
-          "The genetic diversity of crops, farm animals, forest trees, aquatic organisms, micro-organisms, and invertebrates – from bacteria invisible to the human eye that support agricultural"
-        ],
-        "overflow": false
-      }
-    },
-    {
-      "slide_id": "S5",
-      "slide_type": "content",
-      "title_text": "Forest genetic resources",
-      "content": {
-        "content_type": "bullets",
-        "bullets": [
-          "Forest genetic resources are important for sustainable forest management because they provide the potential for adaptation in the past, and will continue to provide this",
-          "vital role as we address the challenge of mitigating or adapting to further climate changes",
-          "With climate change it can no longer be assumed that today’s growing conditions will be the same in 100 years and adaptability to change over"
+          "En el trabajo psicológico con niños, ya sea clínico o educativo, y para responder a los modelos actuales y reaccionar ante los modelos actuales caracterizados",
+          "por ser sistémico e integral, teniendo en cuenta la ética, se recomiendan los siguientes puntos",
+          "En este sentido, el objetivo del trabajo con los niños no es simplemente resolver el problema, sino darles las herramientas y el"
         ],
         "overflow": false
       }
