@@ -2,17 +2,17 @@
   "outline": [
     {
       "title_id": "T0",
-      "title_text": "Ciencia",
+      "title_text": "Computer",
       "source_section_id": "SEC_1"
     },
     {
       "title_id": "T1",
-      "title_text": "",
+      "title_text": "Laptop",
       "source_section_id": "SEC_2"
     },
     {
       "title_id": "T2",
-      "title_text": "",
+      "title_text": "Data, Information and Knowledge",
       "source_section_id": "SEC_3"
     }
   ],
@@ -21,43 +21,42 @@
       "idea_id": "T0_I1",
       "title_id": "T0",
       "section_id": "SEC_1",
-      "text": "155 Revista Número 8 - Diciembre 2000 Contexto de la Ciencia Las características del mundo actual son muy particulares: progreso tecnológico, nuevos modelos de organización social y económica, globalización, información, información y comunicación, información nueva y en crecimiento exponencial, todo lo cual conlleva una serie de cambios a nivel de todas las ciencias. Se enfrenta a una posición de duras críticas que desembocan en crisis, las cuales posibilitan revoluciones en el conocimiento y en la realidad. La educación y la formación recibidas hoy en día no bastan para hacer frente a estas transformaciones cada vez más frecuentes y aceleradas."
+      "text": "A computer is an electronic device, operating under the control of instructions stored in its own memory that can accept data (input), process the data according to specified rules, produce information (output), and store the information for future use."
+    },
+    {
+      "idea_id": "T0_I2",
+      "title_id": "T0",
+      "section_id": "SEC_1",
+      "text": "Computer software is a generic term for organized collections of computer data and instructions, often broken into two major categories: system software that provides the basic non- task-specific functions of the computer, and application software which is used by users to accomplish specific tasks. System software is responsible for controlling, integrating, and managing the individual hardware components of a computer system so that other software and the users of the system see it as a functional unit without having to be concerned with the low-level details such as transferring data from memory to disk, or rendering text onto a display. Generally, system software consists of an operating system and some fundamental utilities such as disk formatters, file managers, display managers, text editors, user authentication (login) and management tools, and networking and device control software."
     },
     {
       "idea_id": "T1_I1",
       "title_id": "T1",
       "section_id": "SEC_2",
-      "text": "La evaluación e intervención en el niño es un proceso de observación y recogida de información durante el proceso que no termina cuando se obtienen los resultados."
-    },
-    {
-      "idea_id": "T1_I2",
-      "title_id": "T1",
-      "section_id": "SEC_2",
-      "text": "La evaluación e intervención se basa en un modelo sistémico e integral, que afirma la naturaleza dialéctica del individuo con su entorno. Este modelo se enmarca en un modelo cognitivo-conductual. Se caracteriza por una evaluación completa, pero que no se restringe a una simple y única descripción de síntomas o indicadores de déficit o potencial que pueda integrar la información y dar cuenta de una complejidad que se relaciona con el entorno del individuo. Se puede evidenciar que el modelo tiene sentido si aporta información sobre la etiología del problema a diagnosticar o tiene implicaciones para el diagnóstico, o tiene implicaciones para el tratamiento y/o pronóstico."
+      "text": "Laptop and Smartphone Computers LAPTOP: A laptop is a battery or AC-powered personal computer that can be easily carried and used in a variety of locations. Many laptops are designed to have all of the functionality of a desktop computer, whichmeans they can generally run the same software and open the same types of files. However, some laptops, such as netbooks, sacrifice some functionality in order to be even more portable. They are generally less powerful than other types of computers, but they provide enough power for email and internet access, which is where the name \"netbook\" comes from."
     },
     {
       "idea_id": "T2_I1",
       "title_id": "T2",
       "section_id": "SEC_3",
-      "text": "En el trabajo psicológico con niños, ya sea clínico o educativo, y con el fin de responder a los modelos actuales y reaccionar a los modelos actuales caracterizados por ser sistémicos e integrales, teniendo en cuenta la ética, se recomiendan los siguientes puntos. En este sentido, el objetivo del trabajo con niños no es simplemente resolver el problema, sino dotarles de herramientas e instrumentos que les ayuden a afrontar, resolver el problema por el que han venido y otros problemas que puedan surgir, es decir, posibilitar los problemas que vayan surgiendo, es decir, posibilitar la transferencia."
+      "text": "Data, Information and Knowledge Data: Facts and figures which relay something specific, but which are not organized in any way and which provide no further information regarding patterns, context, etc. So data means \"unstructured facts and figures that have the least impact on the typical manager.\" Information means \"information that is contextualized, categorized, calculated, and condensed.\" Knowledge means \"knowledge that is based on experience and knowledge.\" Knowledge is a set of skills and knowledge that are derived from experience."
     }
   ],
   "slides": [
     {
       "slide_id": "S0",
       "slide_type": "title",
-      "title_text": "Ciencia"
+      "title_text": "Computer"
     },
     {
       "slide_id": "S1",
       "slide_type": "content",
-      "title_text": "Ciencia",
+      "title_text": "Computer",
       "content": {
         "content_type": "bullets",
         "bullets": [
-          "155 Revista Número 8 - Diciembre 2000 Contexto de la Ciencia Las características del mundo actual son muy particulares",
-          "el progreso tecnológico, los nuevos modelos de organización social y económica, la globalización, la información, la información y la comunicación, la información nueva y exponencialmente creciente, todo lo cual conlleva una serie",
-          "de cambios a nivel de todas las ciencias"
+          "A computer is an electronic device, operating under the control of instructions stored in its own memory that can accept data (input), process the data",
+          "according to specified rules, produce information (output), and store the information for future use"
         ],
         "overflow": false
       }
@@ -65,23 +64,27 @@
     {
       "slide_id": "S2",
       "slide_type": "content",
-      "title_text": "",
+      "title_text": "Computer",
       "content": {
-        "content_type": "paragraph",
-        "text": "La evaluación e intervención en el niño es un proceso de observación y recogida de información durante el proceso que no termina cuando se obtienen los resultados.",
+        "content_type": "bullets",
+        "bullets": [
+          "Computer software is a generic term for organized collections of computer data and instructions, often broken into two major categories",
+          "system software that provides the basic non- task-specific functions of the computer, and application software which is used by users to accomplish specific tasks",
+          "System software is responsible for controlling, integrating, and managing the individual hardware components of a computer system so that other software and the users of"
+        ],
         "overflow": false
       }
     },
     {
       "slide_id": "S3",
       "slide_type": "content",
-      "title_text": "",
+      "title_text": "Laptop",
       "content": {
         "content_type": "bullets",
         "bullets": [
-          "La evaluación e intervención se basa en un modelo sistémico e integral, que afirma la naturaleza dialéctica del individuo con su entorno",
-          "Este modelo se enmarca en un modelo cognitivo-conductual",
-          "Se caracteriza por una evaluación completa, pero que no se limita a una simple y única descripción de síntomas o indicadores de déficits"
+          "Laptop and Smartphone Computers LAPTOP",
+          "A laptop is a battery or AC-powered personal computer that can be easily carried and used in a variety of locations",
+          "Many laptops are designed to have all of the functionality of a desktop computer, whichmeans they can generally run the same software and open the same types of files"
         ],
         "overflow": false
       }
@@ -89,13 +92,13 @@
     {
       "slide_id": "S4",
       "slide_type": "content",
-      "title_text": "",
+      "title_text": "Data, Information and Knowledge",
       "content": {
         "content_type": "bullets",
         "bullets": [
-          "En el trabajo psicológico con niños, ya sea clínico o educativo, y para responder a los modelos actuales y reaccionar ante los modelos actuales caracterizados",
-          "por ser sistémico e integral, teniendo en cuenta la ética, se recomiendan los siguientes puntos",
-          "En este sentido, el objetivo del trabajo con los niños no es simplemente resolver el problema, sino darles las herramientas y el"
+          "Data, Information and Knowledge Data",
+          "Facts and figures which relay something specific, but which are not organized in any way and which provide no further information regarding patterns, context, etc",
+          "So data means \"unstructured facts and figures that have the least impact on the typical manager"
         ],
         "overflow": false
       }
