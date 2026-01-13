@@ -1,6 +1,7 @@
 from typing import List, Dict
 import re
 import torch
+import os
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 
 
@@ -14,26 +15,41 @@ class IdeaGenerator:
 
     def __init__(
         self,
-        model_dir: str,
+        model_dir: str | None = None,
         max_input_len: int = 2048,
         max_new_tokens: int = 400
     ):
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
 
-        self.tokenizer = AutoTokenizer.from_pretrained(model_dir)
+        #no se pasa model_dir, usar Hugging Face desde .env
+        model_dir = model_dir or os.getenv("IDEA_MODEL_REPO")
+        if not model_dir:
+            raise ValueError("IDEA_MODEL_REPO is not set")
+
+        hf_token = os.getenv("HF_TOKEN")
+
+        self.tokenizer = AutoTokenizer.from_pretrained(
+            model_dir,
+            token=hf_token
+        )
 
         if torch.cuda.is_available():
             self.model = AutoModelForSeq2SeqLM.from_pretrained(
                 model_dir,
+                token=hf_token,
                 torch_dtype=torch.float16,
                 device_map="auto"
             )
         else:
-            self.model = AutoModelForSeq2SeqLM.from_pretrained(model_dir)
+            self.model = AutoModelForSeq2SeqLM.from_pretrained(
+                model_dir,
+                token=hf_token
+            )
             self.model = self.model.to(self.device)
 
         self.model.eval()
         self.model.config.use_cache = False
+
 
     def generate_ideas(self, text: str) -> List[Dict[str, str]]:
         prompt = (

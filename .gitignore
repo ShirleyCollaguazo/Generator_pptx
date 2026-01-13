@@ -2,7 +2,10 @@ venv/
 __pycache__/
 *.pyc
 outputs/
+tmp/
+
 # Modelos y checkpoints
+models/
 models/**/checkpoint-*/
 models/**/*.safetensors
 models/**/*.pt
