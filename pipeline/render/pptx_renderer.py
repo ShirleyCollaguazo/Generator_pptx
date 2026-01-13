@@ -17,7 +17,7 @@ def render_pptx_from_contract(
     contract = load_contract(contract_path)
     slides_def = contract.get("slides", [])
 
-    # 🔑 Cargar plantilla base
+    #  Cargar plantilla base
     presentation = Presentation(template_path)
 
     for slide_def in slides_def:

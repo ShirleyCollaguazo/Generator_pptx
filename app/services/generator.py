@@ -13,7 +13,7 @@ from pipeline.translation.translator import DeepLTranslator
 from pipeline.contracts.contract_io import load_contract, save_contract
 
 
-# Rutas base (relativas al root del proyecto)
+# Rutas base 
 CONTRACT_PATH = Path("pipeline/contracts/slide_contract_v1.json")
 TEMPLATE_PATH = Path("assets/templates/base_template.pptx")
 
@@ -30,24 +30,24 @@ def run_pipeline(pdf_path: str | Path, output_path: str | Path) -> Path:
     # Asegurar carpeta outputs
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
-    # 0️⃣ RESET CONTRACT (OBLIGATORIO)
+    # RESET CONTRACT
     reset_contract(CONTRACT_PATH)
 
-    # 1️⃣ EXTRAER TEXTO DEL PDF
+    # EXTRAER TEXTO DEL PDF
     full_text = extract_text_from_pdf(pdf_path)
 
-    #  DETECTAR IDIOMA Y TRADUCIR A INGLÉS (SI APLICA)
+    # DETECTAR IDIOMA Y TRADUCIR A INGLÉS
     detected_lang = detect_language(full_text)
     translator = DeepLTranslator()
 
     if detected_lang == "es":
         full_text = translator.translate(full_text, "ES", "EN")
 
-    # 2️⃣ DIVIDIR EN MACROSECCIONES
+    # DIVIDIR EN MACROSECCIONES
     splitter = MacroSectionSplitter(max_words=1800)
     macrosections = splitter.split(full_text)
 
-    # 3️⃣ PROCESAR CADA MACROSECCIÓN
+    # PROCESAR CADA MACROSECCIÓN
     for sec in macrosections:
         section_id = sec["section_id"]
         section_text = sec["text"]
@@ -69,10 +69,10 @@ def run_pipeline(pdf_path: str | Path, output_path: str | Path) -> Path:
             idea_model_path="models/idea_model"
         )
 
-    # 4️⃣ MAPEO A SLICES (UNA SOLA VEZ)
+    # MAPEO A SLICES (UNA SOLA VEZ)
     map_contract_to_slices(CONTRACT_PATH)
 
-    # 6️⃣ TRADUCIR SALIDA EN → ES (ANTES DEL RENDER) SI EL INPUT ERA ES
+    #  TRADUCIR SALIDA EN → ES (ANTES DEL RENDER) SI EL INPUT ERA ES
     if detected_lang == "es":
         contract = load_contract(CONTRACT_PATH)
 
@@ -102,7 +102,7 @@ def run_pipeline(pdf_path: str | Path, output_path: str | Path) -> Path:
 
         save_contract(contract, CONTRACT_PATH)
 
-    # 5️⃣ RENDER FINAL A PPTX
+    # RENDER FINAL A PPTX
     render_pptx_from_contract(
         contract_path=CONTRACT_PATH,
         template_path=TEMPLATE_PATH,

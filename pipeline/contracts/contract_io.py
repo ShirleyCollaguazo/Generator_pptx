@@ -1,5 +1,3 @@
-# pipeline/contracts/contract_io.py
-
 import json
 from pathlib import Path
 from typing import Dict

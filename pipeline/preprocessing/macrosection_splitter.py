@@ -1,9 +1,6 @@
 import re
 from typing import List, Dict
 
-
-# 🔹 Encabezados que DEFINEN un macro-tema real
-# (ajusta esta lista si cambian los PDFs)
 MACRO_TOPIC_PATTERNS = [
     r'^computers classification',
     r'^data,\s*information\s*and\s*knowledge',
@@ -38,7 +35,7 @@ class MacroSectionSplitter:
             para_words = len(para.split())
             is_new_macro_topic = bool(MACRO_TOPIC_REGEX.match(para.strip()))
 
-            # 🔸 Si aparece un NUEVO macro-tema y ya hay contenido acumulado,
+            # Si aparece un NUEVO macro-tema y ya hay contenido acumulado,
             # cerramos la macrosección actual
             if is_new_macro_topic and buffer:
                 sections.append({
@@ -49,7 +46,7 @@ class MacroSectionSplitter:
                 buffer = []
                 word_count = 0
 
-            # 🔸 Si excede el límite, cerramos en punto semántico seguro
+            # Si excede el límite, cerramos en punto semántico seguro
             if word_count + para_words > self.max_words and buffer:
                 sections.append({
                     "section_id": f"SEC_{section_index}",

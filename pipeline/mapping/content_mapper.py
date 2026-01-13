@@ -93,7 +93,7 @@ def _split_into_bullets(
                 for i in range(0, len(words), max_words)
             ]
 
-            # 🔧 Fusionar último chunk si es muy corto
+            #  Fusionar último chunk si es muy corto
             if len(chunks) > 1 and len(chunks[-1]) < 5:
                 chunks[-2].extend(chunks[-1])
                 chunks.pop()

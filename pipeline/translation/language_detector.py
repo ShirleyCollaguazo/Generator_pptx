@@ -9,7 +9,6 @@ def detect_language(text: str, default_lang: str = "es") -> str:
     """
     try:
         lang = detect(text)
-        # Defensive rule for Romance languages ambiguity
         if lang in {"pt", "ca"} and default_lang == "es":
             return "es"
         return lang

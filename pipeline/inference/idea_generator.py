@@ -5,7 +5,7 @@ import os
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 
 
-MIN_IDEA_CHARS = 120  # regla formal: idea mínima
+MIN_IDEA_CHARS = 120 
 
 
 class IdeaGenerator:
@@ -21,7 +21,7 @@ class IdeaGenerator:
     ):
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
 
-        #no se pasa model_dir, usar Hugging Face desde .env
+        #usa Hugging Face desde .env
         model_dir = model_dir or os.getenv("IDEA_MODEL_REPO")
         if not model_dir:
             raise ValueError("IDEA_MODEL_REPO is not set")
@@ -85,13 +85,11 @@ class IdeaGenerator:
 
         return self._normalize_ideas(raw_output)
 
-    # ─────────────────────────────
-    # 🔹 NORMALIZACIÓN (CLAVE)
-    # ─────────────────────────────
+    # NORMALIZACIÓN (CLAVE)
     def _normalize_ideas(self, text: str) -> List[Dict[str, str]]:
         ideas = []
 
-        # 🔹 Regex ULTRA tolerante a errores reales de LLM
+        # Regex tolerante a errores reales de LLM
         split_pattern = re.compile(
             r'(?i)(?:main\s+ide(?:a|ia|á|é)\s*\d*|ide(?:a|ia|á|é)\s*\d*)\s*:?',
         )
@@ -104,7 +102,7 @@ class IdeaGenerator:
             if len(clean) >= MIN_IDEA_CHARS:
                 ideas.append({"idea_text": clean})
 
-        # 🔹 Fallback semántico: párrafos largos
+        # Fallback semántico: párrafos largos
         if len(ideas) <= 1:
             paragraphs = re.split(r'\n{2,}', text)
             ideas = []
@@ -113,7 +111,7 @@ class IdeaGenerator:
                 if len(p) >= MIN_IDEA_CHARS:
                     ideas.append({"idea_text": p})
 
-        # 🔹 Último fallback absoluto
+        # Último fallback absoluto
         if not ideas and len(text.strip()) >= MIN_IDEA_CHARS:
             ideas.append({"idea_text": text.strip()})
 

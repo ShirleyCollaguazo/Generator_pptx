@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 DEEPL_API_KEY = os.getenv("DEEPL_API_KEY")
-DEEPL_URL = "https://api.deepl.com/v2/translate"  # PRO endpoint
+DEEPL_URL = "https://api.deepl.com/v2/translate" 
 
 class DeepLTranslator:
     """

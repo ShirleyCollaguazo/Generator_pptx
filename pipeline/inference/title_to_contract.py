@@ -36,7 +36,7 @@ def write_titles_to_contract(
         outline.append({
             "title_id": f"T{base_index + idx}",
             "title_text": title,
-            "source_section_id": section_id   # ✅ CLAVE
+            "source_section_id": section_id  
         })
 
     contract["outline"] = outline

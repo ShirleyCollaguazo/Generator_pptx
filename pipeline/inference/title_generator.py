@@ -14,7 +14,7 @@ class TitleGenerator:
     ):
         self.device = device or ("cuda" if torch.cuda.is_available() else "cpu")
 
-        # 👉 usar .env si no se pasan parámetros
+        # usa el .env si no se pasan parámetros
         base_model_name = base_model_name or os.getenv("TITLE_BASE_MODEL")
         adapter_path = adapter_path or os.getenv("TITLE_ADAPTER_REPO")
 
@@ -25,7 +25,7 @@ class TitleGenerator:
 
         hf_token = os.getenv("HF_TOKEN")
 
-        # Tokenizer DESDE el adapter (igual que antes)
+        # Tokenizer DESDE el adapter
         self.tokenizer = AutoTokenizer.from_pretrained(
             adapter_path,
             token=hf_token
@@ -37,7 +37,7 @@ class TitleGenerator:
             torch_dtype=torch.float16 if self.device == "cuda" else torch.float32
         )
 
-        # Cargar LoRA (idéntico comportamiento)
+        # Cargar LoRA 
         self.model = PeftModel.from_pretrained(
             base_model,
             adapter_path,
