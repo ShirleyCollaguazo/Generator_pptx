@@ -7,17 +7,17 @@ def write_titles_to_contract(
     contract_path: Path,
     section_id: str,
     text: str,
-    base_model_name: str,
-    adapter_path: str
-) -> None:
+    base_model_name: str | None = None,
+    adapter_path: str | None = None
+):
 
     contract = load_contract(contract_path)
 
     generator = TitleGenerator(
-        base_model_name=base_model_name,
-        adapter_path=adapter_path
+    base_model_name=base_model_name,
+    adapter_path=adapter_path
     )
-
+    
     titles = generator.generate_titles(text)
 
     titles = [

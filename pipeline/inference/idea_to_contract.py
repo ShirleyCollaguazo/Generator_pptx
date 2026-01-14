@@ -9,8 +9,8 @@ def write_ideas_to_contract(
     contract_path: Path,
     section_id: str,
     text: str,
-    idea_model_path: str
-) -> None:
+    idea_model_path: str | None = None
+):
     """
     Genera UNA o MÁS ideas por macrosección y las guarda en el contrato.
     """
