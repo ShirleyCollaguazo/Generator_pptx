@@ -54,19 +54,16 @@ def run_pipeline(pdf_path: str | Path, output_path: str | Path) -> Path:
 
         # 3.1 TÍTULOS
         write_titles_to_contract(
-            contract_path=CONTRACT_PATH,
-            section_id=section_id,
-            text=section_text,
-            base_model_name="t5-base",
-            adapter_path="models/title_model"
+        contract_path=CONTRACT_PATH,
+        section_id=section_id,
+        text=section_text
         )
 
         # 3.2 IDEAS
         write_ideas_to_contract(
             contract_path=CONTRACT_PATH,
             section_id=section_id,
-            text=section_text,
-            idea_model_path="models/idea_model"
+            text=section_text
         )
 
     # MAPEO A SLICES (UNA SOLA VEZ)
