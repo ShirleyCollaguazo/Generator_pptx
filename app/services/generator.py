@@ -1,7 +1,6 @@
 from pathlib import Path
 
 from pipeline.contracts.contract_reset import reset_contract
-from pipeline.preprocessing.pdf_to_contract import extract_text_from_pdf
 from pipeline.preprocessing.macrosection_splitter import MacroSectionSplitter
 from pipeline.inference.title_to_contract import write_titles_to_contract
 from pipeline.inference.idea_to_contract import write_ideas_to_contract
@@ -18,13 +17,13 @@ CONTRACT_PATH = Path("pipeline/contracts/slide_contract_v1.json")
 TEMPLATE_PATH = Path("assets/templates/base_template.pptx")
 
 
-def run_pipeline(pdf_path: str | Path, output_path: str | Path) -> Path:
+def run_pipeline(input_text: str, output_path: str | Path) -> Path:
     """
-    Ejecuta el pipeline completo (con traducción bidireccional) y genera un PPTX.
+    Ejecuta el pipeline completo (con traducción bidireccional)
+    usando TEXTO PLANO como entrada y genera un PPTX.
 
     Retorna: Path del PPTX generado.
     """
-    pdf_path = Path(pdf_path)
     output_path = Path(output_path)
 
     # Asegurar carpeta outputs
@@ -33,8 +32,8 @@ def run_pipeline(pdf_path: str | Path, output_path: str | Path) -> Path:
     # RESET CONTRACT
     reset_contract(CONTRACT_PATH)
 
-    # EXTRAER TEXTO DEL PDF
-    full_text = extract_text_from_pdf(pdf_path)
+    # TEXTO DE ENTRADA (YA NO VIENE DE PDF)
+    full_text = input_text
 
     # DETECTAR IDIOMA Y TRADUCIR A INGLÉS
     detected_lang = detect_language(full_text)
@@ -52,14 +51,14 @@ def run_pipeline(pdf_path: str | Path, output_path: str | Path) -> Path:
         section_id = sec["section_id"]
         section_text = sec["text"]
 
-        # 3.1 TÍTULOS
+        # 1. TÍTULOS
         write_titles_to_contract(
-        contract_path=CONTRACT_PATH,
-        section_id=section_id,
-        text=section_text
+            contract_path=CONTRACT_PATH,
+            section_id=section_id,
+            text=section_text
         )
 
-        # 3.2 IDEAS
+        # 2. IDEAS
         write_ideas_to_contract(
             contract_path=CONTRACT_PATH,
             section_id=section_id,
@@ -69,28 +68,36 @@ def run_pipeline(pdf_path: str | Path, output_path: str | Path) -> Path:
     # MAPEO A SLICES (UNA SOLA VEZ)
     map_contract_to_slices(CONTRACT_PATH)
 
-    #  TRADUCIR SALIDA EN → ES (ANTES DEL RENDER) SI EL INPUT ERA ES
+    # TRADUCIR SALIDA EN → ES (ANTES DEL RENDER) SI EL INPUT ERA ES
     if detected_lang == "es":
         contract = load_contract(CONTRACT_PATH)
 
         # Traducir títulos del outline
         for item in contract.get("outline", []):
             if item.get("title_text"):
-                item["title_text"] = translator.translate(item["title_text"], "EN", "ES")
+                item["title_text"] = translator.translate(
+                    item["title_text"], "EN", "ES"
+                )
 
         # Traducir ideas
         for idea in contract.get("ideas", []):
             if idea.get("text"):
-                idea["text"] = translator.translate(idea["text"], "EN", "ES")
+                idea["text"] = translator.translate(
+                    idea["text"], "EN", "ES"
+                )
 
-        # Traducir slides (título + contenido)
+        # Traducir slides
         for slide in contract.get("slides", []):
             if slide.get("title_text"):
-                slide["title_text"] = translator.translate(slide["title_text"], "EN", "ES")
+                slide["title_text"] = translator.translate(
+                    slide["title_text"], "EN", "ES"
+                )
 
             content = slide.get("content", {})
             if content.get("content_type") == "paragraph":
-                content["text"] = translator.translate(content.get("text", ""), "EN", "ES")
+                content["text"] = translator.translate(
+                    content.get("text", ""), "EN", "ES"
+                )
             elif content.get("content_type") == "bullets":
                 content["bullets"] = [
                     translator.translate(b, "EN", "ES")
@@ -107,3 +114,4 @@ def run_pipeline(pdf_path: str | Path, output_path: str | Path) -> Path:
     )
 
     return output_path
+

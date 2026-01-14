@@ -2,18 +2,8 @@
   "outline": [
     {
       "title_id": "T0",
-      "title_text": "Computer",
+      "title_text": "Cells as machines",
       "source_section_id": "SEC_1"
-    },
-    {
-      "title_id": "T1",
-      "title_text": "Laptop",
-      "source_section_id": "SEC_2"
-    },
-    {
-      "title_id": "T2",
-      "title_text": "Data, Information and Knowledge",
-      "source_section_id": "SEC_3"
     }
   ],
   "ideas": [
@@ -21,84 +11,25 @@
       "idea_id": "T0_I1",
       "title_id": "T0",
       "section_id": "SEC_1",
-      "text": "A computer is an electronic device, operating under the control of instructions stored in its own memory that can accept data (input), process the data according to specified rules, produce information (output), and store the information for future use."
-    },
-    {
-      "idea_id": "T0_I2",
-      "title_id": "T0",
-      "section_id": "SEC_1",
-      "text": "Computer software is a generic term for organized collections of computer data and instructions, often broken into two major categories: system software that provides the basic non- task-specific functions of the computer, and application software which is used by users to accomplish specific tasks. System software is responsible for controlling, integrating, and managing the individual hardware components of a computer system so that other software and the users of the system see it as a functional unit without having to be concerned with the low-level details such as transferring data from memory to disk, or rendering text onto a display. Generally, system software consists of an operating system and some fundamental utilities such as disk formatters, file managers, display managers, text editors, user authentication (login) and management tools, and networking and device control software."
-    },
-    {
-      "idea_id": "T1_I1",
-      "title_id": "T1",
-      "section_id": "SEC_2",
-      "text": "Laptop and Smartphone Computers LAPTOP: A laptop is a battery or AC-powered personal computer that can be easily carried and used in a variety of locations. Many laptops are designed to have all of the functionality of a desktop computer, whichmeans they can generally run the same software and open the same types of files. However, some laptops, such as netbooks, sacrifice some functionality in order to be even more portable. They are generally less powerful than other types of computers, but they provide enough power for email and internet access, which is where the name \"netbook\" comes from."
-    },
-    {
-      "idea_id": "T2_I1",
-      "title_id": "T2",
-      "section_id": "SEC_3",
-      "text": "Data, Information and Knowledge Data: Facts and figures which relay something specific, but which are not organized in any way and which provide no further information regarding patterns, context, etc. So data means \"unstructured facts and figures that have the least impact on the typical manager.\" Information means \"information that is contextualized, categorized, calculated, and condensed.\" Knowledge means \"knowledge that is based on experience and knowledge.\" Knowledge is a set of skills and knowledge that are derived from experience."
+      "text": "The cell is not a machine, but rather a living organism. It is a complex system of molecules that interact with each other to form proteins, RNA molecules, and DNA molecules. The structure of a cell is influenced by the environment it is in, and how the environment affects the structure of the cell. The cell’s structure is determined by its environment, and its environment is the environment in which the cell is located. It can be a single cell, or a group of cells, or it can be an entire cell. It has a number of components, including DNA, proteins, and RNA. These components are grouped together to form the chromosome, which is the genetic code that determines how a person’s genes are expressed. This code is known as a gene sequence. The sequence is based on the sequence of letters in the DNA. The DNA sequence is also known as the DNA sequence of the human genome. This sequence is used by scientists to understand how genes are formed and how they interact with one another. This process is called gene expression, and it is the process by which proteins are expressed in the cells. The process is referred to as gene expression. The gene expression process is the mechanism by which a protein is expressed in a cellular organism. In the process, the protein is transformed into a DNA molecule, which can then be used to create a new molecule. The molecule is then used to make a copy of the protein. The copy is then sent to a laboratory where it is used to produce a genetically encoded molecule called DNA. This DNA is then transcribed into DNA molecules, which are then sent back to the laboratory to be used in the next generation of cells."
     }
   ],
   "slides": [
     {
       "slide_id": "S0",
       "slide_type": "title",
-      "title_text": "Computer"
+      "title_text": "Cells as machines"
     },
     {
       "slide_id": "S1",
       "slide_type": "content",
-      "title_text": "Computer",
+      "title_text": "Cells as machines",
       "content": {
         "content_type": "bullets",
         "bullets": [
-          "A computer is an electronic device, operating under the control of instructions stored in its own memory that can accept data (input), process the data",
-          "according to specified rules, produce information (output), and store the information for future use"
-        ],
-        "overflow": false
-      }
-    },
-    {
-      "slide_id": "S2",
-      "slide_type": "content",
-      "title_text": "Computer",
-      "content": {
-        "content_type": "bullets",
-        "bullets": [
-          "Computer software is a generic term for organized collections of computer data and instructions, often broken into two major categories",
-          "system software that provides the basic non- task-specific functions of the computer, and application software which is used by users to accomplish specific tasks",
-          "System software is responsible for controlling, integrating, and managing the individual hardware components of a computer system so that other software and the users of"
-        ],
-        "overflow": false
-      }
-    },
-    {
-      "slide_id": "S3",
-      "slide_type": "content",
-      "title_text": "Laptop",
-      "content": {
-        "content_type": "bullets",
-        "bullets": [
-          "Laptop and Smartphone Computers LAPTOP",
-          "A laptop is a battery or AC-powered personal computer that can be easily carried and used in a variety of locations",
-          "Many laptops are designed to have all of the functionality of a desktop computer, whichmeans they can generally run the same software and open the same types of files"
-        ],
-        "overflow": false
-      }
-    },
-    {
-      "slide_id": "S4",
-      "slide_type": "content",
-      "title_text": "Data, Information and Knowledge",
-      "content": {
-        "content_type": "bullets",
-        "bullets": [
-          "Data, Information and Knowledge Data",
-          "Facts and figures which relay something specific, but which are not organized in any way and which provide no further information regarding patterns, context, etc",
-          "So data means \"unstructured facts and figures that have the least impact on the typical manager"
+          "The cell is not a machine, but rather a living organism",
+          "It is a complex system of molecules that interact with each other to form proteins, RNA molecules, and DNA molecules",
+          "The structure of a cell is influenced by the environment it is in, and how the environment affects the structure of the cell"
         ],
         "overflow": false
       }
