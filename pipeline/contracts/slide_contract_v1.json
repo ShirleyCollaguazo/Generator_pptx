@@ -2,8 +2,28 @@
   "outline": [
     {
       "title_id": "T0",
-      "title_text": "Cells as machines",
+      "title_text": "Gender-based violence",
       "source_section_id": "SEC_1"
+    },
+    {
+      "title_id": "T1",
+      "title_text": "",
+      "source_section_id": "SEC_2"
+    },
+    {
+      "title_id": "T2",
+      "title_text": "Gender-based violence detection",
+      "source_section_id": "SEC_3"
+    },
+    {
+      "title_id": "T3",
+      "title_text": "Topic modeling",
+      "source_section_id": "SEC_4"
+    },
+    {
+      "title_id": "T4",
+      "title_text": "Diachronic language models",
+      "source_section_id": "SEC_5"
     }
   ],
   "ideas": [
@@ -11,25 +31,231 @@
       "idea_id": "T0_I1",
       "title_id": "T0",
       "section_id": "SEC_1",
-      "text": "The cell is not a machine, but rather a living organism. It is a complex system of molecules that interact with each other to form proteins, RNA molecules, and DNA molecules. The structure of a cell is influenced by the environment it is in, and how the environment affects the structure of the cell. The cell’s structure is determined by its environment, and its environment is the environment in which the cell is located. It can be a single cell, or a group of cells, or it can be an entire cell. It has a number of components, including DNA, proteins, and RNA. These components are grouped together to form the chromosome, which is the genetic code that determines how a person’s genes are expressed. This code is known as a gene sequence. The sequence is based on the sequence of letters in the DNA. The DNA sequence is also known as the DNA sequence of the human genome. This sequence is used by scientists to understand how genes are formed and how they interact with one another. This process is called gene expression, and it is the process by which proteins are expressed in the cells. The process is referred to as gene expression. The gene expression process is the mechanism by which a protein is expressed in a cellular organism. In the process, the protein is transformed into a DNA molecule, which can then be used to create a new molecule. The molecule is then used to make a copy of the protein. The copy is then sent to a laboratory where it is used to produce a genetically encoded molecule called DNA. This DNA is then transcribed into DNA molecules, which are then sent back to the laboratory to be used in the next generation of cells."
+      "text": "Gender-based violence (GBV) is a type of violence that occurs when a person acts in a manner that is based on their gender. It is characterized by the use of language that is perceived to be offensive or insulting to the other person. GBV is defined as a form of violence in which the perpetrator acts in such a way that the victim is unable to identify the source of the violence. The perpetrator may use a variety of methods to target the victim, such as physical violence, sexual violence, or emotional abuse. The victim may also be influenced by other factors such as age, gender, and socio-economic status."
+    },
+    {
+      "idea_id": "T0_I2",
+      "title_id": "T0",
+      "section_id": "SEC_1",
+      "text": "This research aims to develop an AI-based model that can be used to distinguish between different types of GBV. The proposed model can also be applied to other types of violence such as cyberstalking, cyberbullying, and gender-based harassment."
+    },
+    {
+      "idea_id": "T1_I1",
+      "title_id": "T1",
+      "section_id": "SEC_2",
+      "text": "Gender-based violence, also known as cyberviolence, is a form of cyber aggression that occurs when a person acts in a manner that is harmful to others. It is characterized by a variety of behaviors, such as sexual, physical, emotional, economic, and harmful traditional practices. These behaviors are often associated with a specific type of violence, which can be categorized into five categories: sexual violence, physical violence, emotional violence, economic violence, and non-cyberbullying. These types of violence can be classified into three categories: gender-based cyberbullying, which is the most common form of violence; non-CRISP-DM, which refers to a group of behaviors that are not related to gender; and a subcategory of non-CIRP-DM which is defined as a category that is not associated with gender. This category is used to categorize the types of threats that are associated with this type of behavior. The"
+    },
+    {
+      "idea_id": "T1_I2",
+      "title_id": "T1",
+      "section_id": "SEC_2",
+      "text": "The main objective of the research is to identify patterns of aggression and evaluate the effectiveness of AI-powered content filtering systems on data that isn’t 4."
+    },
+    {
+      "idea_id": "T1_I3",
+      "title_id": "T1",
+      "section_id": "SEC_2",
+      "text": "This research aims to provide a refined dataset and classification model for levels of aggression. This can be implemented in web content filters to help mitigate the persistent threats of gender based violence in digital media. The proposed solution aims at enhancing the detection and prevention of such harmful behaviors, offering a more reliable approach to address this growing issue in online environments. The current challenges in accurately classifying aggression in online texts arise from differences in the interpretation of general datasets compared to aggression, often leading to inconsistent results from AI models for classifying cyberthreats. These challenges are further complicated by the fragmented nature of research on the subject, revealing a lack of consensus on how to effectively address the issue. As"
+    },
+    {
+      "idea_id": "T2_I1",
+      "title_id": "T2",
+      "section_id": "SEC_3",
+      "text": "Gender-based violence (GBV) is a form of gender-based aggression, which is characterized by a high level of toxicity and a low level of aggression. It is often associated with sexism, violence, and offensive humor. The"
+    },
+    {
+      "idea_id": "T2_I2",
+      "title_id": "T2",
+      "section_id": "SEC_3",
+      "text": "GBV can be categorized into three categories: offensive humor, sexist humor, and toxicity. These categories are grouped into four categories: low, medium, high, and toxic. These classifications are based on the linguistic descriptor Offensive Humor, which can be used to describe a person’s behavior in a negative way. The toxicity category is categorized as a combination of offensive humor and violence. It can be classified into two categories: toxicity, which refers to the toxicity of the content, and aggressiveness, which relates to the aggressiveness of the text. This category is also referred to as aggressiveness. Aggressiveness is defined as the level of aggressiveness in the text, ranging from low to high levels. Aggression is defined by the number of times the text is exposed to negative sentiments. It may be interpreted as an aggressiveness due to a lack of positive sentiment, or a toxicity due to the presence of negative sentiment. The classification of a text can be affected by several factors, such as the type of content, the language used, and the context in which the text was published. These factors can affect the accuracy of the model. The model is able to correctly classify the majority of texts in the test set. However, the final loss of 20% is due to model tuning."
+    },
+    {
+      "idea_id": "T2_I3",
+      "title_id": "T2",
+      "section_id": "SEC_3",
+      "text": "The model can be trained on large datasets like the 124 million tweets used for fine-tuning RoBERTa, which has been refined for sentiment analysis and research expansion [45,"
+    },
+    {
+      "idea_id": "T3_I1",
+      "title_id": "T3",
+      "section_id": "SEC_4",
+      "text": "Gender-based violence (GBV) is a form of cyberbullying in which a person is subjected to physical, emotional, and/or verbal abuse by another person. The"
+    },
+    {
+      "idea_id": "T3_I2",
+      "title_id": "T3",
+      "section_id": "SEC_4",
+      "text": "GBV can be categorized into a number of different types depending on the context, such as physical, verbal, or emotional abuse. GBV is defined as a type of violence in which the perpetrator is deemed to be a threat to another person’s physical or emotional well-being. It is characterized by the use of sexist, abusive, or threatening language. It can also be characterized as physical abuse, emotional abuse, or sexual abuse. This type of abuse is often referred to as sexism, and it is often associated with physical abuse. It may also be associated with sexual abuse, but it is also associated with mental abuse. The primary purpose of this paper is to develop a layered model of GBV that can be used to identify and categorize the different types of violence. This model is based on a review of the literature on GBV, and the"
+    },
+    {
+      "idea_id": "T3_I3",
+      "title_id": "T3",
+      "section_id": "SEC_4",
+      "text": "It is important to understand that GBV does not necessarily mean physical violence, and that it can also include emotional abuse and sexual abuse as well as physical violence. In this paper, we propose a model that identifies GBV in a way that it is not a physical act, but rather a mental act. The proposed model can be applied to a variety of situations, including physical abuse and emotional abuse in addition to sexual abuse and physical abuse in the context of gender based violence. We propose that the proposed model is applicable to situations in which GBV occurs, and we propose that it may be used as an alternative to physical violence in order to identify the specific types of aggression. We conclude that this model may be applicable to"
+    },
+    {
+      "idea_id": "T4_I1",
+      "title_id": "T4",
+      "section_id": "SEC_5",
+      "text": "Lu, “Sosnet: A graph convolutional network approach to fine-grained cyberbullying detection,” in 2020 IEEE International Conference on Big Data (Big Data) . IEEE, 2020, pp. 1699–1708. IEEE, 2021, 1699, 1708, 1709, 1710, 1711, 1712, 1713, 1714, 1715, 1716, 1717, 1718, 1719, 1720, 1721, 1722, 1723, 1724, 1725, 1726, 1727, 1728, 1729, 1730, 1731, 1732, 1733, 1734, 1735, 1736, 1737, 1738, 1739, 1740, 1741, 1742, 1743, 1744, 1745, 1746, 1747, 1748, 1749, 1753, 1754, 1755, 1756, 1757, 1758, 1759, 1762, 1763, 1764, 1765, 1766, 1767, 1768, 1769, 1770, 1772, 1773, 1774, 1775, 1776, 1777, 1778, 1779, 1780, 1781, 1782, 1783, 1784, 1785, 1786, 1787, 1788, 1789, 1790, 1791, 1792, 1793, 1794, 1795, 1796, 1797, 1798, 1799, 1801, 1802, 1803, 1804, 1805, 1806, 1807, 1808, 1809, 1811, 1812, 1813, 1814, 1815, 1816, 1817, 1818, 1819, 1820, 1821, 1822, 1823, 1824, 1826, 1827, 1828, 1829, 1830,"
     }
   ],
   "slides": [
     {
       "slide_id": "S0",
       "slide_type": "title",
-      "title_text": "Cells as machines"
+      "title_text": "Gender-based violence"
     },
     {
       "slide_id": "S1",
       "slide_type": "content",
-      "title_text": "Cells as machines",
+      "title_text": "Gender-based violence",
       "content": {
         "content_type": "bullets",
         "bullets": [
-          "The cell is not a machine, but rather a living organism",
-          "It is a complex system of molecules that interact with each other to form proteins, RNA molecules, and DNA molecules",
-          "The structure of a cell is influenced by the environment it is in, and how the environment affects the structure of the cell"
+          "Gender-based violence (GBV) is a type of violence that occurs when a person acts in a manner that is based on their gender",
+          "It is characterized by the use of language that is perceived to be offensive or insulting to the other person",
+          "GBV is defined as a form of violence in which the perpetrator acts in such a way that the victim is unable to identify the source of the violence"
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "slide_id": "S2",
+      "slide_type": "content",
+      "title_text": "Gender-based violence",
+      "content": {
+        "content_type": "bullets",
+        "bullets": [
+          "This research aims to develop an AI-based model that can be used to distinguish between different types of GBV",
+          "The proposed model can also be applied to other types of violence such as cyberstalking, cyberbullying, and gender-based harassment"
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "slide_id": "S3",
+      "slide_type": "content",
+      "title_text": "",
+      "content": {
+        "content_type": "bullets",
+        "bullets": [
+          "Gender-based violence, also known as cyberviolence, is a form of cyber aggression that occurs when a person acts in a manner that is harmful to others",
+          "It is characterized by a variety of behaviors, such as sexual, physical, emotional, economic, and harmful traditional practices",
+          "These behaviors are often associated with a specific type of violence, which can be categorized into five categories"
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "slide_id": "S4",
+      "slide_type": "content",
+      "title_text": "",
+      "content": {
+        "content_type": "paragraph",
+        "text": "The main objective of the research is to identify patterns of aggression and evaluate the effectiveness of AI-powered content filtering systems on data that isn’t 4.",
+        "overflow": false
+      }
+    },
+    {
+      "slide_id": "S5",
+      "slide_type": "content",
+      "title_text": "",
+      "content": {
+        "content_type": "bullets",
+        "bullets": [
+          "This research aims to provide a refined dataset and classification model for levels of aggression",
+          "This can be implemented in web content filters to help mitigate the persistent threats of gender based violence in digital media",
+          "The proposed solution aims at enhancing the detection and prevention of such harmful behaviors, offering a more reliable approach to address this growing issue in online environments"
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "slide_id": "S6",
+      "slide_type": "content",
+      "title_text": "Gender-based violence detection",
+      "content": {
+        "content_type": "bullets",
+        "bullets": [
+          "Gender-based violence (GBV) is a form of gender-based aggression, which is characterized by a high level of toxicity and a low level of aggression",
+          "It is often associated with sexism, violence, and offensive humor"
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "slide_id": "S7",
+      "slide_type": "content",
+      "title_text": "Gender-based violence detection",
+      "content": {
+        "content_type": "bullets",
+        "bullets": [
+          "GBV can be categorized into three categories",
+          "offensive humor, sexist humor, and toxicity",
+          "These categories are grouped into four categories"
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "slide_id": "S8",
+      "slide_type": "content",
+      "title_text": "Gender-based violence detection",
+      "content": {
+        "content_type": "paragraph",
+        "text": "The model can be trained on large datasets like the 124 million tweets used for fine-tuning RoBERTa, which has been refined for sentiment analysis and research expansion [45,",
+        "overflow": false
+      }
+    },
+    {
+      "slide_id": "S9",
+      "slide_type": "content",
+      "title_text": "Topic modeling",
+      "content": {
+        "content_type": "paragraph",
+        "text": "Gender-based violence (GBV) is a form of cyberbullying in which a person is subjected to physical, emotional, and/or verbal abuse by another person. The",
+        "overflow": false
+      }
+    },
+    {
+      "slide_id": "S10",
+      "slide_type": "content",
+      "title_text": "Topic modeling",
+      "content": {
+        "content_type": "bullets",
+        "bullets": [
+          "GBV can be categorized into a number of different types depending on the context, such as physical, verbal, or emotional abuse",
+          "GBV is defined as a type of violence in which the perpetrator is deemed to be a threat to another person’s physical or emotional well-being",
+          "It is characterized by the use of sexist, abusive, or threatening language"
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "slide_id": "S11",
+      "slide_type": "content",
+      "title_text": "Topic modeling",
+      "content": {
+        "content_type": "bullets",
+        "bullets": [
+          "It is important to understand that GBV does not necessarily mean physical violence, and that it can also include emotional abuse and sexual abuse as well as physical violence",
+          "In this paper, we propose a model that identifies GBV in a way that it is not a physical act, but rather a mental act",
+          "The proposed model can be applied to a variety of situations, including physical abuse and emotional abuse in addition to sexual abuse and physical abuse"
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "slide_id": "S12",
+      "slide_type": "content",
+      "title_text": "Diachronic language models",
+      "content": {
+        "content_type": "bullets",
+        "bullets": [
+          "Lu, “Sosnet",
+          "A graph convolutional network approach to fine-grained cyberbullying detection,” in 2020 IEEE International Conference on Big Data (Big Data)",
+          "IEEE, 2020, pp"
         ],
         "overflow": false
       }

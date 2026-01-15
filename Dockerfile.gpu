@@ -1,0 +1,94 @@
+# ==========================================
+# DOCKERFILE VERSIÓN GPU
+# ==========================================
+FROM nvidia/cuda:11.8.0-cudnn8-runtime-ubuntu22.04
+
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
+ENV DEBIAN_FRONTEND=noninteractive
+ENV TZ=UTC
+
+WORKDIR /app
+
+# Instalar Python 3.11
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    software-properties-common \
+    tzdata \
+    && ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone \
+    && add-apt-repository -y ppa:deadsnakes/ppa \
+    && apt-get update && apt-get install -y --no-install-recommends \
+    python3.11 \
+    python3.11-dev \
+    python3.11-distutils \
+    git \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
+
+# Configurar Python 3.11 como predeterminado
+RUN update-alternatives --install /usr/bin/python python /usr/bin/python3.11 1 \
+    && update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.11 1
+
+# Instalar pip para Python 3.11
+RUN curl -sS https://bootstrap.pypa.io/get-pip.py | python3.11 \
+    && python3.11 -m pip install --upgrade pip setuptools wheel
+
+# Instalamos PyTorch primero desde el índice oficial de PyTorch (CUDA 11.8)
+RUN python3.11 -m pip install --no-cache-dir torch==2.7.1 torchvision==0.22.1 torchaudio==2.7.1 --index-url https://download.pytorch.org/whl/cu118
+
+# Instalamos requerimientos (excluyendo torch que ya está instalado)
+COPY requirements.txt .
+RUN sed '/^torch==/d; /^torchvision==/d; /^torchaudio==/d' requirements.txt > /tmp/requirements_no_torch.txt && \
+    python3.11 -m pip install --no-cache-dir -r /tmp/requirements_no_torch.txt && \
+    python3.11 -m pip install "huggingface_hub[cli]"
+
+# ============================================================
+# ⬇️ DESCARGA DE MODELOS (CORREGIDA)
+# ============================================================
+ARG HF_TOKEN
+ENV HF_TOKEN=${HF_TOKEN}
+
+ARG IDEA_MODEL_REPO
+ARG TITLE_BASE_MODEL
+ARG TITLE_ADAPTER_REPO
+
+ENV IDEA_MODEL_REPO=${IDEA_MODEL_REPO}
+ENV TITLE_BASE_MODEL=${TITLE_BASE_MODEL}
+ENV TITLE_ADAPTER_REPO=${TITLE_ADAPTER_REPO}
+
+# --- 1. IDEA MODEL (Modelo completo) ---
+RUN mkdir -p /app/models/idea_model
+RUN echo "Descargando Idea Model (${IDEA_MODEL_REPO})..." && \
+    huggingface-cli download ${IDEA_MODEL_REPO} \
+    --token ${HF_TOKEN} \
+    --local-dir /app/models/idea_model \
+    --local-dir-use-symlinks False
+
+# [DEBUG] Listamos la carpeta para verificar descarga
+RUN echo "CONTENIDO DE idea_model:" && ls -la /app/models/idea_model
+
+# --- 2. TITLE ADAPTER (Adaptador LoRA) ---
+RUN mkdir -p /app/models/title_adapter
+RUN echo "Descargando Title Adapter (${TITLE_ADAPTER_REPO})..." && \
+    huggingface-cli download ${TITLE_ADAPTER_REPO} \
+    --token ${HF_TOKEN} \
+    --local-dir /app/models/title_adapter \
+    --local-dir-use-symlinks False
+
+# [DEBUG] Listamos la carpeta para verificar descarga
+RUN echo "CONTENIDO DE title_adapter:" && ls -la /app/models/title_adapter
+
+# Nota: El modelo base T5 (TITLE_BASE_MODEL) se descargará automáticamente
+# en runtime desde HuggingFace cache si no está disponible localmente
+
+# ============================================================
+
+# Copiamos el código fuente
+COPY ./app /app/app
+COPY ./pipeline /app/pipeline
+COPY ./assets /app/assets
+
+# Creamos los directorios necesarios
+RUN mkdir -p /app/tmp /app/outputs /app/data
+
+EXPOSE 8000
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
