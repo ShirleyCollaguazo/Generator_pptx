@@ -1,0 +1,32 @@
+services:
+  generator-pptx-gpu:
+    build:
+      context: .
+      dockerfile: Dockerfile.gpu
+      args:
+        HF_TOKEN: ${HF_TOKEN}
+        IDEA_MODEL_REPO: ${IDEA_MODEL_REPO}
+        TITLE_BASE_MODEL: ${TITLE_BASE_MODEL}
+        TITLE_ADAPTER_REPO: ${TITLE_ADAPTER_REPO}
+    container_name: generator-pptx-gpu
+    ports:
+      - "8002:8000"
+    volumes:
+      # Mapeamos la caché de HuggingFace para que el T5-Large se guarde en tu PC 
+      # y no se descargue cada vez que reinicias el container
+      - ./data/hf_cache:/root/.cache/huggingface
+      - ./app:/app/app
+      - ./pipeline:/app/pipeline
+      - ./tmp:/app/tmp
+      - ./outputs:/app/outputs
+      - ./data:/app/data
+    env_file:
+      - .env
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    restart: unless-stopped

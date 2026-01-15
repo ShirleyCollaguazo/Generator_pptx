@@ -1,0 +1,22 @@
+services:
+  generator-pptx-cpu:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        HF_TOKEN: ${HF_TOKEN}  # <--- IMPORTANTE: Pasa el token al build
+        IDEA_MODEL_REPO: ${IDEA_MODEL_REPO}
+        TITLE_BASE_MODEL: ${TITLE_BASE_MODEL}
+        TITLE_ADAPTER_REPO: ${TITLE_ADAPTER_REPO}
+    container_name: generator-pptx-cpu
+    ports:
+      - "8002:8000"
+    volumes:
+      - ./app:/app/app
+      - ./pipeline:/app/pipeline
+      - ./tmp:/app/tmp
+      - ./outputs:/app/outputs
+      - ./data:/app/data
+    env_file:
+      - .env
+    restart: unless-stopped

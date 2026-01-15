@@ -12,7 +12,7 @@ mpmath==1.3.0
 networkx==3.6.1
 numpy==2.3.5
 packaging==25.0
-peft==0.10.0
+peft==0.18.0
 pillow==12.0.0
 psutil==7.1.3
 PyPDF2==3.0.1
@@ -23,12 +23,12 @@ safetensors==0.7.0
 sentencepiece==0.2.1
 setuptools==70.2.0
 sympy==1.14.0
-tokenizers==0.19.1
+tokenizers==0.21.0
 torch==2.7.1+cu118
 torchaudio==2.7.1+cu118
 torchvision==0.22.1+cu118
 tqdm==4.67.1
-transformers==4.40.2
+transformers>=4.45.0
 typing_extensions==4.15.0
 urllib3==2.6.2
 PyMuPDF==1.26.7
@@ -39,3 +39,4 @@ fastapi==0.128.0
 uvicorn[standard]==0.40.0
 python-multipart==0.0.21
 python-dotenv==1.2.1
+python-pptx==0.6.23

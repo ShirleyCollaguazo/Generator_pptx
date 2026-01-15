@@ -21,30 +21,62 @@ class IdeaGenerator:
     ):
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
 
-        #usa Hugging Face desde .env
-        model_dir = model_dir or os.getenv("IDEA_MODEL_REPO")
+        # Prioridad: parámetro > variable de entorno > ruta local en Docker
         if not model_dir:
-            raise ValueError("IDEA_MODEL_REPO is not set")
+            # Intentar ruta local en Docker primero
+            docker_local_path = "/app/models/idea_model"
+            if os.path.exists(docker_local_path):
+                model_dir = docker_local_path
+                print(f"[INFO] Usando modelo local desde Docker: {model_dir}")
+            else:
+                # Usar variable de entorno (repositorio HuggingFace)
+                model_dir = os.getenv("IDEA_MODEL_REPO")
+                if not model_dir:
+                    raise ValueError("IDEA_MODEL_REPO is not set y no se encontró modelo local")
+                print(f"[INFO] Usando modelo remoto desde HuggingFace: {model_dir}")
 
         hf_token = os.getenv("HF_TOKEN")
 
-        self.tokenizer = AutoTokenizer.from_pretrained(
-            model_dir,
-            token=hf_token
-        )
-
-        if torch.cuda.is_available():
-            self.model = AutoModelForSeq2SeqLM.from_pretrained(
+        # Si es ruta local, usar local_files_only
+        is_local = os.path.exists(model_dir) if model_dir else False
+        
+        if is_local:
+            self.tokenizer = AutoTokenizer.from_pretrained(
                 model_dir,
-                token=hf_token,
-                torch_dtype=torch.float16,
-                device_map="auto"
+                local_files_only=True
             )
         else:
-            self.model = AutoModelForSeq2SeqLM.from_pretrained(
+            self.tokenizer = AutoTokenizer.from_pretrained(
                 model_dir,
                 token=hf_token
             )
+
+        if torch.cuda.is_available():
+            if is_local:
+                self.model = AutoModelForSeq2SeqLM.from_pretrained(
+                    model_dir,
+                    torch_dtype=torch.float16,
+                    local_files_only=True,
+                    device_map="auto"
+                )
+            else:
+                self.model = AutoModelForSeq2SeqLM.from_pretrained(
+                    model_dir,
+                    token=hf_token,
+                    torch_dtype=torch.float16,
+                    device_map="auto"
+                )
+        else:
+            if is_local:
+                self.model = AutoModelForSeq2SeqLM.from_pretrained(
+                    model_dir,
+                    local_files_only=True
+                )
+            else:
+                self.model = AutoModelForSeq2SeqLM.from_pretrained(
+                    model_dir,
+                    token=hf_token
+                )
             self.model = self.model.to(self.device)
 
         self.model.eval()

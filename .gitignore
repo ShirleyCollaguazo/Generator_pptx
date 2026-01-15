@@ -4,6 +4,9 @@ __pycache__/
 outputs/
 tmp/
 
+# Caché de Hugging Face
+data/hf_cache/
+
 # Modelos y checkpoints
 models/
 models/**/checkpoint-*/
