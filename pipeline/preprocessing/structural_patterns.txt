@@ -1,0 +1,4 @@
+^\d+(\.\d+)*\s+
+^(Chapter|Section|Capítulo|Sección|Tema|Unidad)\b
+^[A-ZÁÉÍÓÚÑÜ\s]{5,}$
+^[-=]{3,}$

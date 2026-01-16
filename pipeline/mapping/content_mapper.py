@@ -1,9 +1,18 @@
 from typing import Dict, List
+from pipeline.mapping.bullet_postprocess import postprocess_bullets
+from pipeline.mapping.bullet_decision import should_use_paragraph
+import re
+
+
+
 
 MAX_BULLETS_PER_SLICE = 3
 MAX_WORDS_PER_BULLET = 25
 MAX_TOTAL_WORDS_PER_SLICE = 90  # regla pedagógica
 MAX_WORDS_PER_BULLET_HARD = 18
+MAX_PARAGRAPH_WORDS = 80
+
+
 
 
 def map_text_to_content(text: str) -> Dict:
@@ -12,6 +21,34 @@ def map_text_to_content(text: str) -> Dict:
     Marks content as overflow if it should be split into multiple slices.
     """
 
+    text = text.strip()
+
+    if should_use_paragraph(text):
+        words = text.split()
+
+        # Párrafo explicativo demasiado largo → bullets suaves
+        if len(words) > 90:
+            bullets = _split_into_bullets(
+                text,
+                max_bullets=3,
+                max_words=22
+            )
+            bullets = postprocess_bullets(bullets)
+
+            return {
+                "content_type": "bullets",
+                "bullets": bullets,
+                "overflow": False
+            }
+
+        # Explicativo normal → párrafo
+        return {
+            "content_type": "paragraph",
+            "text": text,
+            "overflow": False
+        }
+
+    # si NO aplica should_use_paragraph → lógica original
     words = text.split()
     word_count = len(words)
 
@@ -30,6 +67,8 @@ def map_text_to_content(text: str) -> Dict:
             max_bullets=2,
             max_words=MAX_WORDS_PER_BULLET
         )
+        bullets = postprocess_bullets(bullets)
+
         return {
             "content_type": "bullets",
             "bullets": bullets,
@@ -43,6 +82,7 @@ def map_text_to_content(text: str) -> Dict:
         max_words=MAX_WORDS_PER_BULLET
     )
 
+    bullets = postprocess_bullets(bullets)
     total_bullet_words = sum(len(b.split()) for b in bullets)
     max_bullet_len = max(len(b.split()) for b in bullets)
 
@@ -51,12 +91,12 @@ def map_text_to_content(text: str) -> Dict:
         or max_bullet_len > MAX_WORDS_PER_BULLET_HARD
     )
 
-
     return {
         "content_type": "bullets",
         "bullets": bullets,
         "overflow": overflow
     }
+
 
 def _split_into_bullets(
     text: str,

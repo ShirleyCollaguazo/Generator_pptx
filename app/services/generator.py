@@ -1,5 +1,5 @@
 from pathlib import Path
-
+from pipeline.preprocessing.academic_text_cleaner import clean_academic_text
 from pipeline.contracts.contract_reset import reset_contract
 from pipeline.preprocessing.macrosection_splitter import MacroSectionSplitter
 from pipeline.inference.title_to_contract import write_titles_to_contract
@@ -33,7 +33,10 @@ def run_pipeline(input_text: str, output_path: str | Path) -> Path:
     reset_contract(CONTRACT_PATH)
 
     # TEXTO DE ENTRADA (YA NO VIENE DE PDF)
-    full_text = input_text
+    cleaned = clean_academic_text(input_text)
+
+    document_title = cleaned["title"]   # ← se conserva (no rompe nada)
+    full_text = cleaned["body"]
 
     # DETECTAR IDIOMA Y TRADUCIR A INGLÉS
     detected_lang = detect_language(full_text)
@@ -114,4 +117,3 @@ def run_pipeline(input_text: str, output_path: str | Path) -> Path:
     )
 
     return output_path
-
